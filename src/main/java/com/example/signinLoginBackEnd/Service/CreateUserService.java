@@ -14,8 +14,8 @@ public class CreateUserService {
         this.userRepository = userRepository;
     }
 
-    public void createUser(String nome, String lastName, String password) {
-        User user = new User(nome, lastName, password);
+    public void createUser(String nome, String lastName,String email, String password) {
+        User user = new User(nome, lastName, email, password);
         userRepository.save(user);
     }
 

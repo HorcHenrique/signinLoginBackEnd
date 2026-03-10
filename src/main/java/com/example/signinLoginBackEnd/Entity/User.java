@@ -15,13 +15,15 @@ public class User {
     private String name;
     private String lastName;
     private String password;
+    private String email;
 
     public User() {
     }
 
-    public User(String name, String lastName, String password) {
+    public User(String name, String lastName, String email, String password) {
         this.name = name;
         this.lastName = lastName;
+        this.email = email;
         this.password = password;
     }
 
@@ -35,6 +37,9 @@ public class User {
 
     public String getLastName() {
         return lastName;
+    }
+    public String getEmail() {
+        return this.email;
     }
 
     public String getPassword() {

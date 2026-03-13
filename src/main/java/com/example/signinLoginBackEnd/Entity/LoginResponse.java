@@ -22,6 +22,11 @@ public LoginResponse(User user, ResponseCode code) {
     this.code = code;
 }
 
-
+public User getUser() {
+    return this.user;
+}
+public ResponseCode getCode() {
+    return this.code;
+}
 
 }

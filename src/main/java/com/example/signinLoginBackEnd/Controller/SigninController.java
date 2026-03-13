@@ -7,14 +7,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.signinLoginBackEnd.Service.CreateUserService;
 
+
 @RestController
 public class SigninController {
 
     @Autowired
     CreateUserService createUserService;
 
-    @PostMapping("path/create")
-    public void postMethodName(@RequestBody String name, String lastName, String email, String password) {
+    @PostMapping("/create")
+    public void createUser(@RequestBody String name, String lastName, String email, String password) {
         createUserService.createUser(name, lastName, email, password);
     }
+
 }
